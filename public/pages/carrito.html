@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+
+    <link rel="stylesheet" href="../../lib/node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="../../lib/dist/output.css">
+</head>
+<body>
+
+    <header class="flex items-center justify-between w-full mx-auto overflow-hidden max-w-screen-2xl  bg-red-500 md:grid md:grid-cols-4 md:gap-1 ">
+
+        <!-- Promocion -->
+        <div class="hidden w-full md:inline-block md:text-center md:col-span-4 pt-2 pb-0">
+            <p><i class="fa-solid fa-money-bill-transfer"></i> Descuentos del 10% en compras por transferencia <i
+                    class="fa-solid fa-money-bill-transfer"></i></p>
+        </div>
+
+        <!-- Logo -->
+        <div>
+            <a href="../index.html" class="w-1/2 max-w-[200px] md:w-full md:max-w-1/4">
+                <div class="px-1 py-2 flex flex-col items-center justify-center md:pt-0 md:pb-3">
+                    <h1 class="text-4xl">I<span class="text-2xl">RON</span>C<span class="text-2xl">ORE</span></h1>
+                    <h2 class="">Suplementos Deportivos</h2>
+                </div>
+            </a>
+        </div>
+
+        <!-- Icono cuenta -->
+        <div class="md:hidden">
+            <a href=""><i class="fa-solid fa-user"></i></a>
+        </div>
+
+        <!-- Busqueda -->
+        <div class="md:col-span-2 md:flex md:w-full md:h-full md:items-center md:justify-center md:gap-2">
+            <input type="text" name="" id="" class="hidden md:inline-block md:w-3/4 md:h-9 md:rounded-xl">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <!-- Menu cuenta -->
+        <div class="hidden pb-3 md:flex md:items-center md:justify-evenly md:text-lg md:font-semibold">
+            <a href="">
+                <i class="fa-solid fa-user pr-1"> </i>Mi Cuenta</a>
+            <a href="">
+                <i class="fa-solid fa-info pr-1"> </i>Ayuda</a>
+        </div>
+
+        <!-- Menu principal -->
+        <div class="md:col-span-3">
+            <nav class="flex px-1 items-center justify-evenly">
+                <input type="checkbox" id="menu" class="peer/menu hidden">
+                <label for="menu"
+                    class="w-9 h-9 bg-open-menu bg-contain bg-center bg-no-repeat bg-red-400 rounded-lg cursor-pointer peer-checked/menu:bg-close-menu transition-all z-40 md:hidden">
+                </label>
+    
+                <ul class="fixed inset-0 bg-blue-900 px-[5%] grid gap-5 auto-rows-max content-center justify-items-center clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 md:clip-circle-full md:relative md:grid-flow-col md:bg-transparent md:gap-7">
+                    <li>
+                        <a href="../index.html"
+                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./productos.html"
+                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
+                            Productos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./detalle.html"
+                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
+                            Detalle
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./carrito.html"
+                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
+                            Carrito
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html"
+                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+
+        <!-- Carrito de compra -->
+        <div class="hidden md:flex  md:items-center md:justify-center  ">
+            <a href="" class="relative p-3 rounded-md md:w-1/4 md:flex flex-col md:items-center">
+                <i class="fa-solid fa-cart-shopping "></i>
+                <span class="h-5 w-5 text-center absolute text-sm bottom-11 left-10 bg-yellow-400 rounded-full">0</span>
+                <span class="hidden md:inline-block md:ml-3">Carrito</span>
+            </a>
+        </div>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer class="w-full mx-auto overflow-hidden max-w-screen-2xl  bg-red-500 md:grid md:grid-cols-4 md:gap-2 mt-10">
+        <!-- Logo -->
+        <div class="w-[90%] mx-auto">
+            <a href="" class="w-full">
+                <div class="py-2 flex flex-col items-center justify-center">
+                    <h1 class="text-4xl text-center">I<span class="text-2xl">RON</span>C<span class="text-2xl">ORE</span></h1>
+                    <h2 class="text-center">Suplementos Deportivos</h2>
+                </div>
+            </a>
+            <div class="px-3 py-2">
+                <h3>Sarmiento Nº 617 Catamarca</h3>
+                <h3 class="mb-2">ironcore@gmail.com</h3>  
+                <a href=""><h3 class="mb-2">Ver Mapa</h3></a>              
+            </div>
+        </div>
+
+        <!-- Tienda Online -->
+        <div class="w-[90%] mx-auto">
+            <h2 class="pt-5 pb-3 text-center md:text-left md:px-3">Tienda Online</h2>
+            <a href=""><h3 class="px-3 mb-1">Conócenos</h3></a>
+            <a href=""><h3 class="px-3 mb-1">Preguntas Frecuentes</h3></a>
+            <a href=""><h3 class="px-3 mb-1">Condiciones de Venta</h3></a>
+            <a href=""><h3 class="px-3 mb-1">Gastos de Envio</h3></a>
+            <a href=""><h3 class="px-3 mb-1">Políticas de Devolución</h3></a>
+        </div>
+
+        <!-- Medios de Pago -->
+        <div class="w-[95%] mx-auto">
+            <h2 class="pt-5 pb-3 text-center md:text-left md:px-3">Medios de Pago</h2>
+            <div class="flex flex-row flex-wrap justify-evenly gap-1 bg-slate-500">
+                <div class="bg-yellow-400 w-1/5 h-8">
+                <img src="./assets/icons/pagos/mercado-pago.png" alt="" class="h-full w-full object-cover"> 
+                </div>
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/mastercard.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/american-express.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/maestro.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/naranja.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/pago-facil.jpg" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/Paypal.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/visa.png" alt="" class="h-full w-full object-cover">
+                </div>
+                
+            </div>
+        </div>
+        <div class="w-[90%] mx-auto">
+            <h2 class="pt-5 pb-3 text-center md:text-left md:px-3">Suscribite</h2>
+            <form action="" class="rounded-xl max-w-sm">
+                <div class="text-gray-700 grid">
+                    <input type="text" autocomplete="email" class="px-2 border-gray-300 rounded-lg h-9">
+                </div>
+                <div>
+                    <button type="submit" class="p-2 bg-gray-700 mt-2 rounded-lg hover:bg-amber-400">Regristrar</button>
+                </div>
+                
+            </form>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

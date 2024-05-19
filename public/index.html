@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../lib/node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="../lib/dist/output.css">
+</head>
+
+<body>
+    <header
+        class="flex items-center justify-between w-full mx-auto overflow-hidden max-w-screen-2xl  bg-red-500 md:grid md:grid-cols-4 md:gap-1 ">
+
+        <!-- Promocion -->
+        <div class="hidden w-full md:inline-block md:text-center md:col-span-4 pt-2 pb-0">
+            <p><i class="fa-solid fa-money-bill-transfer"></i> Descuentos del 10% en compras por transferencia <i
+                    class="fa-solid fa-money-bill-transfer"></i></p>
+        </div>
+
+        <!-- Logo -->
+        <div>
+            <a href="./index.html" class="w-1/2 max-w-[200px] md:w-full md:max-w-1/4">
+                <div class="px-1 py-2 flex flex-col items-center justify-center md:pt-0 md:pb-3">
+                    <h1 class="text-4xl">I<span class="text-2xl">RON</span>C<span class="text-2xl">ORE</span></h1>
+                    <h2 class="">Suplementos Deportivos</h2>
+                </div>
+            </a>
+        </div>
+
+        <!-- Icono cuenta -->
+        <div class="md:hidden">
+            <a href=""><i class="fa-solid fa-user"></i></a>
+        </div>
+
+        <!-- Busqueda -->
+        <div class="md:col-span-2 md:flex md:w-full md:h-full md:items-center md:justify-center md:gap-2">
+            <input type="text" name="" id="" class="hidden md:inline-block md:w-3/4 md:h-9 md:rounded-xl">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <!-- Menu cuenta -->
+        <div class="hidden pb-3 md:flex md:items-center md:justify-evenly md:text-lg md:font-semibold">
+            <a href="">
+                <i class="fa-solid fa-user pr-1"> </i>Mi Cuenta</a>
+            <a href="">
+                <i class="fa-solid fa-info pr-1"> </i>Ayuda</a>
+        </div>
+
+        <!-- Menu principal -->
+        <div class="md:col-span-3">
+            <nav class="flex px-1 items-center justify-evenly">
+                <input type="checkbox" id="menu" class="peer/menu hidden">
+                <label for="menu"
+                    class="w-9 h-9 bg-open-menu bg-contain bg-center bg-no-repeat bg-red-400 rounded-lg cursor-pointer peer-checked/menu:bg-close-menu transition-all z-40 md:hidden">
+                </label>
+
+                <ul
+                    class="fixed inset-0 bg-blue-900 px-[5%] grid gap-5 auto-rows-max content-center justify-items-center clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 md:clip-circle-full md:relative md:grid-flow-col md:bg-transparent md:gap-7">
+                    <li>
+                        <a href="./index.html"
+                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/productos.html"
+                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
+                            Productos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/detalle.html"
+                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
+                            Detalle
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/carrito.html"
+                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
+                            Carrito
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/contacto.html"
+                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+
+
+
+
+            </nav>
+
+        </div>
+
+        <!-- Carrito de compra -->
+        <div class="hidden md:flex  md:items-center md:justify-center  ">
+            <a href="" class="relative p-3 rounded-md md:w-1/4 md:flex flex-col md:items-center">
+                <i class="fa-solid fa-cart-shopping "></i>
+                <span class="h-5 w-5 text-center absolute text-sm bottom-11 left-10 bg-yellow-400 rounded-full">0</span>
+                <span class="hidden md:inline-block md:ml-3">Carrito</span>
+            </a>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="">
+
+
+
+            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-44 overflow-hidden rounded-lg md:h-[450px]">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/img/index/carousel/slide_1.webp"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[220px] md:h-[600px]"
+                            alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/img/index/carousel/slide_2.webp"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[220px] md:h-[550px] "
+                            alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/img/index/carousel/slide_3.webp"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[190px] md:h-[450px]"
+                            alt="...">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/img/index/carousel/slide_4.webp"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:h-[350px]"
+                            alt="...">
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/img/index/carousel/slide_5.webp"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:h-[450px]"
+                            alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                        data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                        data-carousel-slide-to="4"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <section class="mx-1 md:mx-2">
+            <ul class="grid grid-cols-2 gap-1 md:grid-cols-4 md:gap-2">
+                <li>
+                    <a href="">
+                        <figure class="h-32 md:h-72">
+                            <img src="../public/assets/img/index/destacados/proteina.webp" alt=""
+                                class="h-full w-full object-fill">
+                        </figure>
+                        <p class="bg-gradient-to-r from-black to-gray-900 p-1 text-white">Proteinas</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure class="h-32 md:h-72">
+                            <img src="../public/assets/img/index/destacados/creatina.webp" alt=""
+                                class="h-full w-full object-fill">
+                        </figure>
+                        <p class="bg-gradient-to-r from-black to-gray-900 p-1 text-white">Creatinas</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure class="h-32 md:h-72">
+                            <img src="../public/assets/img/index/destacados/entrenos.webp" alt=""
+                                class="h-full w-full object-fill">
+                        </figure>
+                        <p class="bg-gradient-to-r from-black to-gray-900 p-1 text-white">Pre/Post-Entrenos</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure class="h-32 md:h-72">
+                            <img src="../public/assets/img/index/destacados/combos3.webp" alt=""
+                                class="h-full w-full object-fill">
+                        </figure>
+                        <p class="bg-gradient-to-r from-black to-gray-900 p-1 text-white">Combos</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mx-auto md:block md:w-[99%] md:h-auto md:my-2 bg-sky-600 pb-3">
+            <div class="flex justify-center pt-4 mb-3">
+                <div class="my-0 ml-6 md:ml-16 w-1/4 md:w-2/5 border-t-2 border-black relative top-3 float-left">&nbsp;</div>
+                <div class="w-2/4 md:w-1/5">
+                    <h1 class="text-center">
+                        <span class="text-xs md:text-xl">Ofertas impredibles</span>
+                    </h1>
+                </div>
+                <div class="my-0 mr-6 md:mr-16 w-1/4 md:w-2/5 border-t-2 border-black relative top-3 float-left">&nbsp;</div>
+            </div>
+
+            <div class="grid grid-cols-2 mx-5 gap-3 md:grid-cols-4 md:gap-4 md:mx-7 lg:gap-8 lg:mx-20">
+
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                            src="../public/assets/img/index/ofertas/prote_star.webp" alt="" />
+                    </a>
+                    <div class="py-1 px-2">
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                        </a>
+
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                $ 28000,00</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                            src="../public/assets/img/index/ofertas/Creatina-Gold.webp" alt="" />
+                    </a>
+                    <div class="py-1 px-2">
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                        </a>
+
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                $ 28000,00</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                            src="../public/assets/img/index/ofertas/Whey-Protein-Body.webp" alt="" />
+                    </a>
+                    <div class="py-1 px-2">
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                        </a>
+
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                $ 28000,00</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                            src="../public/assets/img/index/ofertas/Whey-Protein-Gold-Iso.webp" alt="" />
+                    </a>
+                    <div class="py-1 px-2">
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                        </a>
+
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                $ 28000,00</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                            src="../public/assets/img/index/ofertas/Whey-Protein-Gentech.webp" alt="" />
+                    </a>
+                    <div class="py-1 px-2">
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                        </a>
+
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                $ 28000,00</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                            src="../public/assets/img/index/ofertas/Whey-Protein-Gold.webp" alt="" />
+                    </a>
+                    <div class="py-1 px-2">
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                        </a>
+
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                $ 28000,00</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                            src="../public/assets/img/index/ofertas/crea-star-pote.webp" alt="" />
+                    </a>
+                    <div class="py-1 px-2">
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                        </a>
+
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                $ 28000,00</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                            src="../public/assets/img/index/ofertas/Whey-Protein-Ena.webp" alt="" />
+                    </a>
+                    <div class="py-1 px-2">
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                        </a>
+
+                        <a href="#">
+                            <p
+                                class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                $ 28000,00</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mx-auto md:block w-[99%] md:h-auto md:my-2 bg-yellow-600">
+            <div class="flex justify-center pt-4 mb-3">
+                <div class="my-0 ml-6 md:ml-16 w-1/4 md:w-2/5 border-t-2 border-black relative top-3 float-left">&nbsp;</div>
+                <div class="w-2/4 md:w-1/5">
+                    <h1 class="text-center">
+                        <span class="text-xs md:text-xl">Lo mas Buscado</span>
+                    </h1>
+                </div>
+                <div class="my-0 mr-6 md:mr-16 w-1/4 md:w-2/5 border-t-2 border-black relative top-3 float-left">&nbsp;</div>
+            </div>
+
+            <div id="controls-carousel" class="relative w-[95%] mx-auto" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-80">
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="hidden md:grid md:grid-cols-4 md:gap-4 md:mx-10 lg:gap-8 lg:mx-20">
+                            <!-- Item 1 -->
+                            <div
+                                class="hidden md:grid max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                                        src="../public/assets/img/index/ofertas/prote_star.webp" alt="" />
+                                </a>
+                                <div class="py-1 px-2">
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                                    </a>
+
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                            $ 28000,00</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div
+                                class="hidden md:grid max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                                        src="../public/assets/img/index/ofertas/crea-star-pote.webp" alt="" />
+                                </a>
+                                <div class="py-1 px-2">
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                                    </a>
+
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                            $ 28000,00</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div
+                                class="hidden md:grid max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                                        src="../public/assets/img/index/ofertas/Creatina-Gold.webp" alt="" />
+                                </a>
+                                <div class="py-1 px-2">
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                                    </a>
+
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                            $ 28000,00</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div
+                                class="hidden md:grid max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                                        src="../public/assets/img/index/ofertas/Whey-Protein-Body.webp" alt="" />
+                                </a>
+                                <div class="py-1 px-2">
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                                    </a>
+
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                            $ 28000,00</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-1 mx-16 md:hidden">
+                            <!-- Item 1 -->
+                            <div
+                                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <img class="rounded-t-lg w-[100px] h-[100px] mx-auto"
+                                        src="../public/assets/img/index/ofertas/prote_star.webp" alt="" />
+                                </a>
+                                <div class="py-1 px-2">
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                                    </a>
+
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                            $ 2000,00</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div
+                                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                                        src="../public/assets/img/index/ofertas/crea-star-pote.webp" alt="" />
+                                </a>
+                                <div class="py-1 px-2">
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                                    </a>
+
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                            $ 28000,00</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="hidden md:grid md:grid-cols-4 md:gap-4 md:mx-7 lg:gap-8 lg:mx-20">
+                            <!-- Item 5 -->
+                            <div
+                                class="hidden md:grid max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                                        src="../public/assets/img/index/ofertas/Whey-Protein-Ena.webp" alt="" />
+                                </a>
+                                <div class="py-1 px-2">
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                                    </a>
+
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                            $ 28000,00</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Item 6 -->
+                            <div
+                                class="hidden md:grid max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                                        src="../public/assets/img/index/ofertas/Whey-Protein-Gentech.webp" alt="" />
+                                </a>
+                                <div class="py-1 px-2">
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                                    </a>
+
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                            $ 28000,00</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Item 7 -->
+                            <div
+                                class="hidden md:grid max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                                        src="../public/assets/img/index/ofertas/Whey-Protein-Gold-Iso.webp" alt="" />
+                                </a>
+                                <div class="py-1 px-2">
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                                    </a>
+
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                            $ 28000,00</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Item 8 -->
+                            <div
+                                class="hidden md:grid max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                                        src="../public/assets/img/index/ofertas/Whey-Protein-Gold.webp" alt="" />
+                                </a>
+                                <div class="py-1 px-2">
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                                    </a>
+
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                            $ 28000,00</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-1 mx-16 md:hidden">
+                            <!-- Item 3 -->
+                            <div
+                                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <img class="rounded-t-lg w-[100px] h-[100px] mx-auto"
+                                        src="../public/assets/img/index/ofertas/prote_star.webp" alt="" />
+                                </a>
+                                <div class="py-1 px-2">
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                                    </a>
+
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                            $ 288000,00</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div
+                                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <img class="rounded-t-lg w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto"
+                                        src="../public/assets/img/index/ofertas/Whey-Protein-Body.webp" alt="" />
+                                </a>
+                                <div class="py-1 px-2">
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-center font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Platinum Whey Protein Star Nutrition Doypack 2 Lbs</p>
+                                    </a>
+
+                                    <a href="#">
+                                        <p
+                                            class="mb-2 text-xs md:text-sm text-end font-semibold tracking-tight text-gray-900 dark:text-white">
+                                            $ 28000,00</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+        </section>
+
+        <section class="hidden md:block md:w-[99%] md:h-14 lg:h-24 mx-auto my-2">
+            <div class="grid grid-cols-12 h-full w-full gap-4">
+                <div class="">
+
+                </div>
+                <div class="">
+                    <a href="">
+                        <div
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            <img src="../public/assets/img/index/marcas/Xtrenght1.png" alt="" class="object-cover">
+                        </div>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <div
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            <img src="../public/assets/img/index/marcas/Body.webp" alt="" class="object-cover">
+                        </div>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <div
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            <img src="../public/assets/img/index/marcas/Ena.webp" alt="" class="object-cover">
+                        </div>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <div
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            <img src="../public/assets/img/index/marcas/gente.webp" alt="" class="object-cover">
+                        </div>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <div
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            <img src="../public/assets/img/index/marcas/Gold.webp" alt="" class="object-cover">
+                        </div>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <div
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            <img src="../public/assets/img/index/marcas/HTN1.png" alt="" class="object-cover">
+                        </div>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <div
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            <img src="../public/assets/img/index/marcas/Mervick1.png" alt="" class="object-cover">
+                        </div>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <div
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            <img src="../public/assets/img/index/marcas/Pain-Lab.webp" alt="" class="object-cover">
+                        </div>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <div
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            <img src="../public/assets/img/index/marcas/Star1.png" alt="" class="object-cover">
+                        </div>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <div
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            <img src="../public/assets/img/index/marcas/XBody1.png" alt="" class="object-cover">
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="">
+                    <a href="">
+                        <div class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            <img src="../public/assets/img/index/marcas/Xtrenght1.png" alt="" class="object-cover">
+                        </div>
+                    </a>
+                </div> -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="w-full mx-auto overflow-hidden max-w-screen-2xl  bg-red-500 md:grid md:grid-cols-4 md:gap-2">
+        <!-- Logo -->
+        <div class="w-[90%] mx-auto">
+            <a href="" class="w-full">
+                <div class="py-2 flex flex-col items-center justify-center">
+                    <h1 class="text-4xl text-center">I<span class="text-2xl">RON</span>C<span
+                            class="text-2xl">ORE</span></h1>
+                    <h2 class="text-center">Suplementos Deportivos</h2>
+                </div>
+            </a>
+            <div class="px-3 py-2">
+                <h3>Sarmiento Nº 617 Catamarca</h3>
+                <h3 class="mb-2">ironcore@gmail.com</h3>
+                <a href="">
+                    <h3 class="mb-2">Ver Mapa</h3>
+                </a>
+            </div>
+        </div>
+
+        <!-- Tienda Online -->
+        <div class="w-[90%] mx-auto">
+            <h2 class="pt-5 pb-3 text-center md:text-left md:px-3">Tienda Online</h2>
+            <a href="">
+                <h3 class="px-3 mb-1">Conócenos</h3>
+            </a>
+            <a href="">
+                <h3 class="px-3 mb-1">Preguntas Frecuentes</h3>
+            </a>
+            <a href="">
+                <h3 class="px-3 mb-1">Condiciones de Venta</h3>
+            </a>
+            <a href="">
+                <h3 class="px-3 mb-1">Gastos de Envio</h3>
+            </a>
+            <a href="">
+                <h3 class="px-3 mb-1">Políticas de Devolución</h3>
+            </a>
+        </div>
+
+        <!-- Medios de Pago -->
+        <div class="w-[95%] mx-auto">
+            <h2 class="pt-5 pb-3 text-center md:text-left md:px-3">Medios de Pago</h2>
+            <div class="flex flex-row flex-wrap justify-evenly gap-1 bg-slate-500">
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/mercado-pago.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/mastercard.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/american-express.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/maestro.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/naranja.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/pago-facil.jpg" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/Paypal.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="bg-yellow-400 w-1/5 h-8">
+                    <img src="./assets/icons/pagos/visa.png" alt="" class="h-full w-full object-cover">
+                </div>
+
+            </div>
+        </div>
+        <div class="w-[90%] mx-auto">
+            <h2 class="pt-5 pb-3 text-center md:text-left md:px-3">Suscribite</h2>
+            <form action="" class="rounded-xl max-w-sm">
+                <div class="text-gray-700 grid">
+                    <input type="text" autocomplete="email" class="px-2 border-gray-300 rounded-lg h-9">
+                </div>
+                <div>
+                    <button type="submit" class="p-2 bg-gray-700 mt-2 rounded-lg hover:bg-amber-400">Regristrar</button>
+                </div>
+
+            </form>
+        </div>
+
+    </footer>
+
+
+    <script src="../lib/node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
