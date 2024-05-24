@@ -6,225 +6,373 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../../lib/node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="../../lib/dist/output.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <script src="../js/scripts.js" defer></script>
 </head>
 
 <body>
 
-    <header
-        class="flex items-center justify-between w-full mx-auto overflow-hidden max-w-screen-2xl  bg-red-500 md:grid md:grid-cols-4 md:gap-1 ">
-
-        <!-- Promocion -->
-        <div class="hidden w-full md:inline-block md:text-center md:col-span-4 pt-2 pb-0">
-            <p><i class="fa-solid fa-money-bill-transfer"></i> Descuentos del 10% en compras por transferencia <i
-                    class="fa-solid fa-money-bill-transfer"></i></p>
+    <header class="mb-3">
+        <div class="w-full mx-auto overflow-hidden max-w-screen-2xl  bg-yellow-100 grid grid-cols-12">
+            <!-- Promocion -->
+            <section class="w-full col-span-12 md:block md:text-center md:col-span-12 py-2 bg-yellow-100">
+                <p class="text-xs text-center md:text-sm"><i class="fa-solid fa-money-bill-transfer"></i> Descuentos del
+                    10% en
+                    compras por transferencia <i class="fa-solid fa-money-bill-transfer"></i></p>
+            </section>
         </div>
-
-        <!-- Logo -->
-        <div>
-            <a href="../index.html" class="w-1/2 max-w-[200px] md:w-full md:max-w-1/4">
-                <div class="px-1 py-2 flex flex-col items-center justify-center md:pt-0 md:pb-3">
-                    <h1 class="text-4xl">I<span class="text-2xl">RON</span>C<span class="text-2xl">ORE</span></h1>
-                    <h2 class="">Suplementos Deportivos</h2>
+        <div class="w-full mx-auto overflow-hidden max-w-screen-2xl  bg-red-700 grid grid-cols-12 lg:hidden">
+            <section class="w-full col-span-6 h-auto flex items-center justify-center">
+                <!-- Busqueda -->
+                <div class="w-[90%] px-2 flex items-center justify-center gap-2">
+                    <input type="text" name="" id="" class="w-full text-sm rounded-lg">
+                    <button class=""><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i></button>
                 </div>
-            </a>
+            </section>
+            <section class="w-full col-span-4 flex items-center justify-center text-white font-semibold">
+                <!-- cuenta -->
+                <a href="">
+                    <i class="fa-solid fa-user pr-1"> </i><span class="">Mi Cuenta</span></a>
+            </section>
+            <section class="w-full md:flex md:col-span-2 py-2 md:items-center md:justify-center">
+                <!-- Carrito de compra -->
+                <div class="flex  items-center justify-center">
+                    <div class="relative w-16 h-full flex items-center justify-center">
+                        <a href="" class="p-3 pl-5 rounded-md md:w-full">
+                            <i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i>
+                            <span class="h-5 w-5 text-center absolute text-sm top-0 bg-yellow-400 rounded-full">0</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
-
-        <!-- Icono cuenta -->
-        <div class="md:hidden">
-            <a href=""><i class="fa-solid fa-user"></i></a>
-        </div>
-
-        <!-- Busqueda -->
-        <div class="md:col-span-2 md:flex md:w-full md:h-full md:items-center md:justify-center md:gap-2">
-            <input type="text" name="" id="" class="hidden md:inline-block md:w-3/4 md:h-9 md:rounded-xl">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-
-        <!-- Menu cuenta -->
-        <div class="hidden pb-3 md:flex md:items-center md:justify-evenly md:text-lg md:font-semibold">
-            <a href="">
-                <i class="fa-solid fa-user pr-1"> </i>Mi Cuenta</a>
-            <a href="">
-                <i class="fa-solid fa-info pr-1"> </i>Ayuda</a>
-        </div>
-
         <!-- Menu principal -->
-        <div class="md:col-span-3">
-            <nav class="flex px-1 items-center justify-evenly">
-                <input type="checkbox" id="menu" class="peer/menu hidden">
-                <label for="menu"
-                    class="w-9 h-9 bg-open-menu bg-contain bg-center bg-no-repeat bg-red-400 rounded-lg cursor-pointer peer-checked/menu:bg-close-menu transition-all z-40 md:hidden">
-                </label>
-
-                <ul
-                    class="fixed inset-0 bg-blue-900 px-[5%] grid gap-5 auto-rows-max content-center justify-items-center clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 md:clip-circle-full md:relative md:grid-flow-col md:bg-transparent md:gap-7">
-                    <li>
-                        <a href="../index.html"
-                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
-                            Inicio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./productos.html"
-                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
-                            Productos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./detalle.html"
-                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
-                            Detalle
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./carrito.html"
-                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
-                            Carrito
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./contacto.html"
-                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
-                            Contacto
-                        </a>
-                    </li>
-                </ul>
-
-
-
-
-            </nav>
-
-        </div>
-
-        <!-- Carrito de compra -->
-        <div class="hidden md:flex  md:items-center md:justify-center  ">
-            <a href="" class="relative p-3 rounded-md md:w-1/4 md:flex flex-col md:items-center">
-                <i class="fa-solid fa-cart-shopping "></i>
-                <span class="h-5 w-5 text-center absolute text-sm bottom-11 left-10 bg-yellow-400 rounded-full">0</span>
-                <span class="hidden md:inline-block md:ml-3">Carrito</span>
-            </a>
-        </div>
+        <nav class="bg-red-700 border-gray-200 max-w-screen-2xl md:py-2">
+            <div class="flex flex-wrap items-center justify-between mx-auto px-4 py-0">
+                <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <div class="px-1 py-2 flex flex-col items-center justify-center md:pt-0 md:pb-3">
+                        <h1 class="logo text-xl text-white md:text-4xl">I<span
+                                class="text-xs md:text-2xl">RON</span>C<span
+                                class="logo text-sm text-white md:text-2xl">ORE</span></h1>
+                        <h2 class="logo text-sm text-white">Suplementos Deportivos</h2>
+                    </div>
+                </a>
+                <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
+                    <a href=""
+                        class="hidden lg:inline-block text-white hover:text-indigo-200 hover:font-medium focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm lg:text-lg px-4 py-2 md:px-5 md:py-2.5 focus:outline-none">
+                        <i class="fa-solid fa-user pr-1"> </i><span class="hidden xl:inline-block">Mi Cuenta</span></a>
+                    <button id="dropdownSearchButton" data-dropdown-toggle="dropdownSearch"
+                        data-dropdown-placement="bottom"
+                        class="hidden text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center lg:inline-flex items-center"
+                        type="button"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i> <svg
+                            class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownSearch" class="z-10 hidden bg-white rounded-lg shadow w-60">
+                        <div class="p-3">
+                            <label for="input-group-search" class="sr-only">Buscar</label>
+                            <div class="relative">
+                                <div
+                                    class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                    </svg>
+                                </div>
+                                <input type="text" id="input-group-search"
+                                    class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="Buscar Producto">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden lg:inline-block">
+                        <div class="relative md:w-16 md:h-full flex items-center justify-center">
+                            <a href="" class="p-3 pl-5 rounded-md md:w-full">
+                                <i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i>
+                                <span
+                                    class="h-5 w-5 text-center absolute text-sm top-0 bg-yellow-400 rounded-full">0</span>
+                            </a>
+                        </div>
+                    </div>
+                    <button data-collapse-toggle="mega-menu" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="mega-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="Black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+                    <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+                        <li>
+                            <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown"
+                                class="flex items-center justify-between w-full py-2 px-3 lg:text-lg font-medium text-white border-b border-red-800 md:w-auto hover:bg-red-600 md:hover:bg-transparent md:border-0 md:hover:text-indigo-200 md:p-0">
+                                Categorias <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                            <div id="mega-menu-dropdown"
+                                class="absolute z-40 hidden w-auto grid-cols-2 text-sm bg-red-100 border border-gray-100 rounded-lg shadow-md md:grid-cols-3">
+                                <div class="p-4 pb-0 text-gray-900 md:pb-4">
+                                    <ul class="space-y-4" aria-labelledby="mega-menu-dropdown-button">
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Proteinas
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Creatinas
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Quemadores
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="p-4 pb-0 text-gray-900 md:pb-4">
+                                    <ul class="space-y-4">
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Pre Entrenos
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Post Entrenos
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Aminoacidos
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="p-4">
+                                    <ul class="space-y-4">
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Gainers
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Combos
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Ofertas
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="../index.html"
+                                class="block py-2 px-3 text-white font-medium lg:text-lg border-b border-red-800 hover:bg-red-600 hover:font-medium md:hover:bg-transparent md:border-0 md:hover:text-indigo-200 md:p-0"
+                                aria-current="page">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./productos.html"
+                                class="block py-2 px-3 text-white font-medium lg:text-lg border-b border-red-800 hover:bg-red-600 hover:font-medium md:hover:bg-transparent md:border-0 md:hover:text-indigo-200 md:p-0">Productos</a>
+                        </li>
+                        <li>
+                            <a href="./detalle.html"
+                                class="block py-2 px-3 text-white font-medium lg:text-lg border-b border-red-800 hover:bg-red-600 hover:font-medium md:hover:bg-transparent md:border-0 md:hover:text-indigo-200 md:p-0">Detalle</a>
+                        </li>
+                        <li>
+                            <a href="./carrito.html"
+                                class="block py-2 px-3 text-white font-medium lg:text-lg border-b border-red-800 hover:bg-red-600 hover:font-medium md:hover:bg-transparent md:border-0 md:hover:text-indigo-200 md:p-0">Carrito</a>
+                        </li>
+                        <li>
+                            <a href="./contacto.html"
+                                class="block py-2 px-3 text-white font-medium lg:text-lg border-b border-red-800 hover:bg-red-600 hover:font-medium md:hover:bg-transparent md:border-0 md:hover:text-indigo-200 md:p-0">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
     </header>
 
     <main>
-        <div class="w-100 h-[600px] flex flex-wrap">
-            <section class="w-1/2 h-2/3 bg-orange-500 flex items-center justify-end">
-                <div id="default-carousel" class="relative w-full bg-red-400" data-carousel="slide">
-                    <!-- Carousel wrapper -->
-                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                        <!-- Item 1 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src=""
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="...">
+
+        <div class="w-100 grid grid-cols-1 h-full md:h-[550px] md:grid-cols-2 mb-2">
+            <section class="w-[95%] md:w-full mx-auto h-full bg-gray-400 flex justify-center md:justify-end">
+                <div class="h-full md:h-[85%] w-2/3 md:w-4/5 my-auto">
+                    <div id="default-carousel" class="relative w-full" data-carousel="static">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-44 overflow-hidden md:h-[410px]">
+                            <!-- Item 1 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="../assets/img/creatinas/crea-star.webp"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[220px] md:h-[600px] md:w-full"
+                                    alt="...">
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="../assets/img/creatinas/crea-star-1.webp"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[220px] md:h-[600px] "
+                                    alt="...">
+                            </div>
                         </div>
-                        <!-- Item 2 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src=""
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="...">
+                        <!-- Slider indicators -->
+                        <div
+                            class="relative z-20 mt-1 mb-3 md:my-0 flex -translate-x-1/2 -bottom-1 left-1/2 space-x-3 rtl:space-x-reverse justify-center">
+                            <button type="button" class="w-4 h-4 rounded-full md:w-12 md:h-12" aria-current="false"
+                                aria-label="Slide 1" data-carousel-slide-to="1"><img
+                                    src="../assets/img/creatinas/crea-star.webp" alt=""
+                                    class="hidden md:block md:h-full md:w-full"></button>
+                            <button type="button" class="w-4 h-4 rounded-full md:w-12 md:h-12" aria-current="false"
+                                aria-label="Slide 2" data-carousel-slide-to="2"><img
+                                    src="../assets/img/creatinas/crea-star-1.webp" alt=""
+                                    class="hidden md:block md:h-full md:w-full"></button>
                         </div>
-                        <!-- Item 3 -->
-                        <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="/docs/images/carousel/carousel-3.svg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="...">
-                        </div> -->
-                        <!-- Item 4 -->
-                        <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="/docs/images/carousel/carousel-4.svg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="...">
-                        </div> -->
-                        <!-- Item 5 -->
-                        <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="/docs/images/carousel/carousel-5.svg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="...">
-                        </div> -->
                     </div>
-                    <!-- Slider indicators -->
-                    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                            data-carousel-slide-to="0"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                            data-carousel-slide-to="1"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                            data-carousel-slide-to="2"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-                            data-carousel-slide-to="3"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-                            data-carousel-slide-to="4"></button>
+                </div>
+            </section>
+
+            <section class="w-[95%] p-4 mx-auto md:w-full h-auto bg-red-800 text-white">
+                <div class="md:w-5/6 h-auto mx-auto my-4">
+                    <h1 class="text-center font-semibold text-lg md:text-3xl">Creatina Monohydrate (300g) - Star Nutrition</h1>
+                </div>
+                <div class="md:w-4/5 h-auto mx-auto my-3">
+                    <div class="mb-1">
+                        <span>$32.560</span>
                     </div>
-                    <!-- Slider controls -->
-                    <button type="button"
-                        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                        data-carousel-prev>
-                        <span
-                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M5 1 1 5l4 4" />
-                            </svg>
-                            <span class="sr-only">Previous</span>
-                        </span>
-                    </button>
-                    <button type="button"
-                        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                        data-carousel-next>
-                        <span
-                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 9 4-4-4-4" />
-                            </svg>
-                            <span class="sr-only">Next</span>
-                        </span>
-                    </button>
+                    <div class="mb-3">
+                        <span>$29.000</span>
+                        <span>con Transferencia bancaria</span>
+                    </div>
+                    <div class="mb-2">
+                        <a href="">Ver medios de pago</a>
+                    </div>
+                </div>
+                <div class="md:w-4/5 h-auto mx-auto my-3">
+                    <form action="">
+                        <div class=" w-auto h-auto flex mb-3">
+                            <button class="w-[40px] h-[40px] border border-gray-700"><i
+                                    class="fa-solid fa-minus fa-sm"></i></button>
+                            <input type="number" value="1"
+                                class="w-[70px] h-[40px] border border-y-gray-800 text-center text-sm">
+                            <button class="w-[40px] h-[40px] border border-gray-700"><i
+                                    class="fa-solid fa-plus fa-sm"></i></button>
+                            <button type="button"
+                                class="ml-4 w-full focus:outline-none text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Añadir
+                                al Carrito</button>
+                        </div>
+                        <div class="mb-2">
+                            <span><i class="fa-solid fa-truck"></i></span>
+                            <span>Medios de envío</span>
+                        </div>
+                        <div class=" w-full h-auto flex gap-2 mb-3">
+                            <input type="number" class="w-2/3 h-[40px] border border-gray-800 text-sm">
+                            <button type="button"
+                                class="w-1/3 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 me-2 mb-2">Calcular</button>
+                        </div>
+                        <div class="mb-3">
+                            <span><i class="fa-solid fa-shop"></i></span>
+                            <span>Nuestro local</span>
+                        </div>
+                        <div class="w-full h-full md:h-[100px] flex bg-gray-800 mb-3 rounded-lg p-2">
+                            <div class="w-4/5 h-full">
+                                <p class="text-xs md:text-sm">Sucursal ubicada en Sarmiento Nº 617 - San Fernando del
+                                    Valle de Catamarca - Horarios
+                                    de Atención: Lunes a Viernes de 9:00hs a 13:00hs y 16:00 a 20:00hs. Sábados de
+                                    10:00hs a 13:00hs.</p>
+                            </div>
+                            <div class="w-1/5 h-full flex items-center justify-center">
+                                <span class="">Gratis</span>
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
 
-
-
             </section>
-            <section class="w-1/2 h-2/3 bg-lime-500">
-
-            </section>
-            <section class="w-full h-1/3 bg-pink-600">
-                Descripcion
-            </section>
-
         </div>
 
+        <section class="w-[95%] md:w-full h-auto bg-gray-400 mb-2 mx-auto p-2 md:p-4">
+            <h2 class="mb-3 font-semibold text-lg">DESCRIPCIÓN</h2>
+
+            <h3 class="mb-2 font-semibold">CREATINA MICRONIZADA</h3>
+
+            <h5 class="mb-2 text-justify">Nuestra CREATINA MICRONIZADA es un excelente suplemento pre entrenamiento ya que colabora en la
+                formación de los componentes energéticos, mejora la potencia muscular y retrasa la fatiga muscular,
+                preparando al cuerpo para un mejor rendimiento físico Ha sido demostrado que apoya el crecimiento del
+                tamaño de los músculos, y el aumento de fuerza y poder cuando se la combina con actividades de alta
+                intensidad.</h5>
+            <div class="w-[90%] mx-auto mb-2">
+                <ul>
+                    <li>- Formula puro con un solo ingrediente: CREATINA MICRONIZADA.</li>
+                    <li>- Ideal para personas que realizan ejercicios de FUERZA.</li>
+                    <li>- Disminuye la fatiga luego de la actividad.</li>
+                    <li>- Ayuda al aumento de la fuerza muscular para el aumento de los músculos.</li>
+                    <li>- Se absorbe de manera rápida brindando al organismo energía inmediata.</li>
+                </ul>
+            </div>
+            <h5 class="mb-2 font-semibold"> MODO DE USO:</h5>
+            <p class="mb-2"> Ingesta diaria: 5g aprox. por día (1 cuchara de té colmada) en 200cm3 de agua o jugos para sabor Neutro.</p>
+
+        </section>
+        
     </main>
 
-    <footer class="w-full mx-auto overflow-hidden max-w-screen-2xl  bg-red-500 md:grid md:grid-cols-4 md:gap-2">
+    <footer
+        class="w-full mx-auto overflow-hidden max-w-screen-2xl  bg-red-700 md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-2">
         <!-- Logo -->
-        <div class="w-[90%] mx-auto">
+        <div class="w-[90%] mx-auto text-gray-200">
             <a href="" class="w-full">
                 <div class="py-2 flex flex-col items-center justify-center">
-                    <h1 class="text-4xl text-center">I<span class="text-2xl">RON</span>C<span
+                    <h1 class="logo text-4xl text-center">I<span class="text-2xl">RON</span>C<span
                             class="text-2xl">ORE</span></h1>
-                    <h2 class="text-center">Suplementos Deportivos</h2>
+                    <h2 class="logo text-center">Suplementos Deportivos</h2>
                 </div>
             </a>
             <div class="px-3 py-2">
                 <h3>Sarmiento Nº 617 Catamarca</h3>
                 <h3 class="mb-2">ironcore@gmail.com</h3>
                 <a href="">
-                    <h3 class="mb-2">Ver Mapa</h3>
+                    <h3 class="mb-2 underline">Ver Mapa</h3>
                 </a>
             </div>
         </div>
-
         <!-- Tienda Online -->
-        <div class="w-[90%] mx-auto">
-            <h2 class="pt-5 pb-3 text-center md:text-left md:px-3">Tienda Online</h2>
+        <div class="w-[90%] mx-auto text-gray-200">
+            <h2 class="pt-5 pb-3 text-center md:text-left md:px-3 font-bold md:text-2xl">Tienda Online</h2>
             <a href="">
                 <h3 class="px-3 mb-1">Conócenos</h3>
             </a>
@@ -241,51 +389,60 @@
                 <h3 class="px-3 mb-1">Políticas de Devolución</h3>
             </a>
         </div>
-
         <!-- Medios de Pago -->
-        <div class="w-[95%] mx-auto">
+        <div class="w-[95%] mx-auto text-gray-200">
             <h2 class="pt-5 pb-3 text-center md:text-left md:px-3">Medios de Pago</h2>
-            <div class="flex flex-row flex-wrap justify-evenly gap-1 bg-slate-500">
-                <div class="bg-yellow-400 w-1/5 h-8">
+            <div class="flex flex-row flex-wrap justify-evenly gap-2">
+                <div class="w-1/5 h-8">
                     <img src="../assets/icons/pagos/mercado-pago.png" alt="" class="h-full w-full object-cover">
                 </div>
-                <div class="bg-yellow-400 w-1/5 h-8">
+                <div class="w-1/5 h-8">
                     <img src="../assets/icons/pagos/mastercard.png" alt="" class="h-full w-full object-cover">
                 </div>
-                <div class="bg-yellow-400 w-1/5 h-8">
+                <div class="w-1/5 h-8">
                     <img src="../assets/icons/pagos/american-express.png" alt="" class="h-full w-full object-cover">
                 </div>
-                <div class="bg-yellow-400 w-1/5 h-8">
+                <div class="w-1/5 h-8">
                     <img src="../assets/icons/pagos/maestro.png" alt="" class="h-full w-full object-cover">
                 </div>
-                <div class="bg-yellow-400 w-1/5 h-8">
+                <div class="w-1/5 h-8">
                     <img src="../assets/icons/pagos/naranja.png" alt="" class="h-full w-full object-cover">
                 </div>
-                <div class="bg-yellow-400 w-1/5 h-8">
+                <div class="w-1/5 h-8">
                     <img src="../assets/icons/pagos/pago-facil.jpg" alt="" class="h-full w-full object-cover">
                 </div>
-                <div class="bg-yellow-400 w-1/5 h-8">
+                <div class="w-1/5 h-8">
                     <img src="../assets/icons/pagos/Paypal.png" alt="" class="h-full w-full object-cover">
                 </div>
-                <div class="bg-yellow-400 w-1/5 h-8">
+                <div class="w-1/5 h-8">
                     <img src="../assets/icons/pagos/visa.png" alt="" class="h-full w-full object-cover">
                 </div>
-
+                <div class="w-1/5 h-8">
+                    <img src="../assets/icons/pagos/cash.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="w-1/5 h-8">
+                    <img src="../assets/icons/pagos/transferencia.png" alt="" class="h-full w-full object-fill">
+                </div>
+                <div class="w-1/5 h-8">
+                    <img src="../assets/icons/pagos/bitcoin.png" alt="" class="h-full w-full object-fill">
+                </div>
+                <div class="w-1/5 h-8">
+                    <img src="../assets/icons/pagos/western-union.png" alt="" class="h-full w-full object-fill">
+                </div>
             </div>
         </div>
-        <div class="w-[90%] mx-auto">
+        <!-- Suscripcion -->
+        <div class="hidden w-[90%] mx-auto text-gray-200 lg:inline-block">
             <h2 class="pt-5 pb-3 text-center md:text-left md:px-3">Suscribite</h2>
             <form action="" class="rounded-xl max-w-sm">
                 <div class="text-gray-700 grid">
                     <input type="text" autocomplete="email" class="px-2 border-gray-300 rounded-lg h-9">
                 </div>
                 <div>
-                    <button type="submit" class="p-2 bg-gray-700 mt-2 rounded-lg hover:bg-amber-400">Regristrar</button>
+                    <button type="submit" class="p-2 bg-blue-700 mt-2 rounded-lg hover:bg-blue-800">Regristrar</button>
                 </div>
-
             </form>
         </div>
-
     </footer>
 
 

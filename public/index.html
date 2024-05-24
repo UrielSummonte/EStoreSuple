@@ -6,117 +6,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../lib/node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="../lib/dist/output.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="./js/scripts.js" defer></script>
 </head>
 
 <body>
-    <header
-        class="flex items-center justify-between w-full mx-auto overflow-hidden max-w-screen-2xl  bg-red-500 md:grid md:grid-cols-4 md:gap-1 ">
-
-        <!-- Promocion -->
-        <div class="hidden w-full md:inline-block md:text-center md:col-span-4 pt-2 pb-0">
-            <p><i class="fa-solid fa-money-bill-transfer"></i> Descuentos del 10% en compras por transferencia <i
-                    class="fa-solid fa-money-bill-transfer"></i></p>
+    <header class="mb-3">
+        <div class="w-full mx-auto overflow-hidden max-w-screen-2xl  bg-yellow-100 grid grid-cols-12">
+            <!-- Promocion -->
+            <section class="w-full col-span-12 md:block md:text-center md:col-span-12 py-2 bg-yellow-100">
+                <p class="text-xs text-center md:text-sm"><i class="fa-solid fa-money-bill-transfer"></i> Descuentos del
+                    10% en
+                    compras por transferencia <i class="fa-solid fa-money-bill-transfer"></i></p>
+            </section>
         </div>
-
-        <!-- Logo -->
-        <div>
-            <a href="./index.html" class="w-1/2 max-w-[200px] md:w-full md:max-w-1/4">
-                <div class="px-1 py-2 flex flex-col items-center justify-center md:pt-0 md:pb-3">
-                    <h1 class="text-4xl">I<span class="text-2xl">RON</span>C<span class="text-2xl">ORE</span></h1>
-                    <h2 class="">Suplementos Deportivos</h2>
+        <div class="w-full mx-auto overflow-hidden max-w-screen-2xl  bg-red-700 grid grid-cols-12 lg:hidden">
+            <section class="w-full col-span-6 h-auto flex items-center justify-center">
+                <!-- Busqueda -->
+                <div class="w-[90%] px-2 flex items-center justify-center gap-2">
+                    <input type="text" name="" id="" class="w-full text-sm rounded-lg">
+                    <button class=""><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i></button>
                 </div>
-            </a>
+            </section>
+            <section class="w-full col-span-4 flex items-center justify-center text-white font-semibold">
+                <!-- cuenta -->
+                <a href="">
+                    <i class="fa-solid fa-user pr-1"> </i><span class="">Mi Cuenta</span></a>
+            </section>
+            <section class="w-full md:flex md:col-span-2 py-2 md:items-center md:justify-center">
+                <!-- Carrito de compra -->
+                <div class="flex  items-center justify-center">
+                    <div class="relative w-16 h-full flex items-center justify-center">
+                        <a href="" class="p-3 pl-5 rounded-md md:w-full">
+                            <i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i>
+                            <span class="h-5 w-5 text-center absolute text-sm top-0 bg-yellow-400 rounded-full">0</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
-
-        <!-- Icono cuenta -->
-        <div class="md:hidden">
-            <a href=""><i class="fa-solid fa-user"></i></a>
-        </div>
-
-        <!-- Busqueda -->
-        <div class="md:col-span-2 md:flex md:w-full md:h-full md:items-center md:justify-center md:gap-2">
-            <input type="text" name="" id="" class="hidden md:inline-block md:w-3/4 md:h-9 md:rounded-xl">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-
-        <!-- Menu cuenta -->
-        <div class="hidden pb-3 md:flex md:items-center md:justify-evenly md:text-lg md:font-semibold">
-            <a href="">
-                <i class="fa-solid fa-user pr-1"> </i>Mi Cuenta</a>
-            <a href="">
-                <i class="fa-solid fa-info pr-1"> </i>Ayuda</a>
-        </div>
-
         <!-- Menu principal -->
-        <div class="md:col-span-3">
-            <nav class="flex px-1 items-center justify-evenly">
-                <input type="checkbox" id="menu" class="peer/menu hidden">
-                <label for="menu"
-                    class="w-9 h-9 bg-open-menu bg-contain bg-center bg-no-repeat bg-red-400 rounded-lg cursor-pointer peer-checked/menu:bg-close-menu transition-all z-40 md:hidden">
-                </label>
-
-                <ul
-                    class="fixed inset-0 bg-blue-900 px-[5%] grid gap-5 auto-rows-max content-center justify-items-center clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 md:clip-circle-full md:relative md:grid-flow-col md:bg-transparent md:gap-7">
-                    <li>
-                        <a href="./index.html"
-                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
-                            Inicio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./pages/productos.html"
-                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
-                            Productos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./pages/detalle.html"
-                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
-                            Detalle
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./pages/carrito.html"
-                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
-                            Carrito
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./pages/contacto.html"
-                            class="tracking-wide cursor-pointer px-3 py-1 rounded font-semibold text-lg transition hover:bg-red-500 md:text-xl">
-                            Contacto
-                        </a>
-                    </li>
-                </ul>
-
-
-
-
-            </nav>
-
-        </div>
-
-        <!-- Carrito de compra -->
-        <div class="hidden md:flex  md:items-center md:justify-center  ">
-            <a href="" class="relative p-3 rounded-md md:w-1/4 md:flex flex-col md:items-center">
-                <i class="fa-solid fa-cart-shopping "></i>
-                <span class="h-5 w-5 text-center absolute text-sm bottom-11 left-10 bg-yellow-400 rounded-full">0</span>
-                <span class="hidden md:inline-block md:ml-3">Carrito</span>
-            </a>
-        </div>
+        <nav class="bg-red-700 border-gray-200 max-w-screen-2xl md:py-2">
+            <div class="flex flex-wrap items-center justify-between mx-auto px-4 py-0">
+                <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <div class="px-1 py-2 flex flex-col items-center justify-center md:pt-0 md:pb-3">
+                        <h1 class="logo text-xl text-white md:text-4xl">I<span
+                                class="text-xs md:text-2xl">RON</span>C<span
+                                class="logo text-sm text-white md:text-2xl">ORE</span></h1>
+                        <h2 class="logo text-sm text-white">Suplementos Deportivos</h2>
+                    </div>
+                </a>
+                <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
+                    <a href=""
+                        class="hidden lg:inline-block text-white hover:text-indigo-200 hover:font-medium focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm lg:text-lg px-4 py-2 md:px-5 md:py-2.5 focus:outline-none">
+                        <i class="fa-solid fa-user pr-1"> </i><span class="hidden xl:inline-block">Mi Cuenta</span></a>
+                    <button id="dropdownSearchButton" data-dropdown-toggle="dropdownSearch"
+                        data-dropdown-placement="bottom"
+                        class="hidden text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center lg:inline-flex items-center"
+                        type="button"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i> <svg
+                            class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownSearch" class="z-40 hidden bg-white rounded-lg shadow w-60">
+                        <div class="p-3">
+                            <label for="input-group-search" class="sr-only">Buscar</label>
+                            <div class="relative">
+                                <div
+                                    class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                    </svg>
+                                </div>
+                                <input type="text" id="input-group-search"
+                                    class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="Buscar Producto">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden lg:inline-block">
+                        <div class="relative md:w-16 md:h-full flex items-center justify-center">
+                            <a href="" class="p-3 pl-5 rounded-md md:w-full">
+                                <i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i>
+                                <span
+                                    class="h-5 w-5 text-center absolute text-sm top-0 bg-yellow-400 rounded-full">0</span>
+                            </a>
+                        </div>
+                    </div>
+                    <button data-collapse-toggle="mega-menu" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="mega-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="Black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+                    <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+                        <li>
+                            <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown"
+                                class="flex items-center justify-between w-full py-2 px-3 lg:text-lg font-medium text-white border-b border-red-800 md:w-auto hover:bg-red-600 md:hover:bg-transparent md:border-0 md:hover:text-indigo-200 md:p-0">
+                                Categorias <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                            <div id="mega-menu-dropdown"
+                                class="absolute z-40 hidden w-auto grid-cols-2 text-sm bg-red-100 border border-gray-100 rounded-lg shadow-md md:grid-cols-3">
+                                <div class="p-4 pb-0 text-gray-900 md:pb-4">
+                                    <ul class="space-y-4" aria-labelledby="mega-menu-dropdown-button">
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Proteinas
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Creatinas
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Quemadores
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="p-4 pb-0 text-gray-900 md:pb-4">
+                                    <ul class="space-y-4">
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Pre Entrenos
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Post Entrenos
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Aminoacidos
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="p-4">
+                                    <ul class="space-y-4">
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Gainers
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Combos
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                                Ofertas
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./index.html"
+                                class="block py-2 px-3 text-white font-medium lg:text-lg border-b border-red-800 hover:bg-red-600 hover:font-medium md:hover:bg-transparent md:border-0 md:hover:text-indigo-200 md:p-0"
+                                aria-current="page">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./pages/productos.html"
+                                class="block py-2 px-3 text-white font-medium lg:text-lg border-b border-red-800 hover:bg-red-600 hover:font-medium md:hover:bg-transparent md:border-0 md:hover:text-indigo-200 md:p-0">Productos</a>
+                        </li>
+                        <li>
+                            <a href="./pages/detalle.html"
+                                class="block py-2 px-3 text-white font-medium lg:text-lg border-b border-red-800 hover:bg-red-600 hover:font-medium md:hover:bg-transparent md:border-0 md:hover:text-indigo-200 md:p-0">Detalle</a>
+                        </li>
+                        <li>
+                            <a href="./pages/carrito.html"
+                                class="block py-2 px-3 text-white font-medium lg:text-lg border-b border-red-800 hover:bg-red-600 hover:font-medium md:hover:bg-transparent md:border-0 md:hover:text-indigo-200 md:p-0">Carrito</a>
+                        </li>
+                        <li>
+                            <a href="./pages/contacto.html"
+                                class="block py-2 px-3 text-white font-medium lg:text-lg border-b border-red-800 hover:bg-red-600 hover:font-medium md:hover:bg-transparent md:border-0 md:hover:text-indigo-200 md:p-0">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
     </header>
 
     <main>
-        <section class="">
-
-
-
+        <section class="mb-2">
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
                 <!-- Carousel wrapper -->
-                <div class="relative h-44 overflow-hidden rounded-lg md:h-[450px]">
+                <div class="relative h-44 overflow-hidden md:h-[450px]">
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="./assets/img/index/carousel/slide_1.webp"
@@ -166,8 +281,8 @@
                     class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                     data-carousel-prev>
                     <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/70 group-hover:bg-black/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M5 1 1 5l4 4" />
@@ -179,8 +294,8 @@
                     class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                     data-carousel-next>
                     <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/70 group-hover:bg-black/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="m1 9 4-4-4-4" />
@@ -232,19 +347,18 @@
             </ul>
         </section>
 
-        <section class="mx-auto md:block md:w-[99%] md:h-auto md:my-2 bg-sky-600 pb-3">
+        <section class="mx-auto md:block md:w-[99%] md:h-auto md:my-2 bg-red-800 pb-3 text-white">
             <div class="flex justify-center pt-4 mb-3">
-                <div class="my-0 ml-6 md:ml-16 w-1/4 md:w-2/5 border-t-2 border-black relative top-3 float-left">&nbsp;</div>
-                <div class="w-2/4 md:w-1/5">
+                <div class="my-0 ml-6 md:ml-16 w-1/4 md:w-2/5 border-t-2 border-red-600 relative top-3 float-left">&nbsp;</div>
+                <div class="w-2/4">
                     <h1 class="text-center">
-                        <span class="text-xs md:text-xl">Ofertas impredibles</span>
+                        <span class="text-xl md:text-2xl lg:text-4xl">Ofertas Impredibles</span>
                     </h1>
                 </div>
-                <div class="my-0 mr-6 md:mr-16 w-1/4 md:w-2/5 border-t-2 border-black relative top-3 float-left">&nbsp;</div>
+                <div class="my-0 mr-6 md:mr-16 w-1/4 md:w-2/5 border-t-2 border-red-600 relative top-3 float-left">&nbsp;</div>
             </div>
 
-            <div class="grid grid-cols-2 mx-5 gap-3 md:grid-cols-4 md:gap-4 md:mx-7 lg:gap-8 lg:mx-20">
-
+            <div class="grid grid-cols-2 mx-5 gap-3 md:grid-cols-3 lg:grid-cols-4 md:gap-4 md:mx-7 lg:gap-8 lg:mx-20">
                 <div
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
@@ -265,7 +379,6 @@
                         </a>
                     </div>
                 </div>
-
                 <div
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
@@ -286,7 +399,6 @@
                         </a>
                     </div>
                 </div>
-
                 <div
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
@@ -307,7 +419,6 @@
                         </a>
                     </div>
                 </div>
-
                 <div
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
@@ -328,7 +439,6 @@
                         </a>
                     </div>
                 </div>
-
                 <div
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
@@ -349,7 +459,6 @@
                         </a>
                     </div>
                 </div>
-
                 <div
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
@@ -370,7 +479,6 @@
                         </a>
                     </div>
                 </div>
-
                 <div
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
@@ -391,7 +499,6 @@
                         </a>
                     </div>
                 </div>
-
                 <div
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
@@ -412,19 +519,18 @@
                         </a>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <section class="mx-auto md:block w-[99%] md:h-auto md:my-2 bg-yellow-600">
+        <section class="mx-auto md:block w-[99%] md:h-auto md:my-2 text-white bg-amber-700">
             <div class="flex justify-center pt-4 mb-3">
-                <div class="my-0 ml-6 md:ml-16 w-1/4 md:w-2/5 border-t-2 border-black relative top-3 float-left">&nbsp;</div>
-                <div class="w-2/4 md:w-1/5">
+                <div class="my-0 ml-6 md:ml-16 w-1/4 md:w-2/5 border-t-2 border-amber-600 relative top-3 float-left">&nbsp;</div>
+                <div class="w-2/4">
                     <h1 class="text-center">
-                        <span class="text-xs md:text-xl">Lo mas Buscado</span>
+                        <span class="text-xl md:text-2xl lg:text-4xl">Lo Mas Buscado</span>
                     </h1>
                 </div>
-                <div class="my-0 mr-6 md:mr-16 w-1/4 md:w-2/5 border-t-2 border-black relative top-3 float-left">&nbsp;</div>
+                <div class="my-0 mr-6 md:mr-16 w-1/4 md:w-2/5 border-t-2 border-amber-600 relative top-3 float-left">&nbsp;</div>
             </div>
 
             <div id="controls-carousel" class="relative w-[95%] mx-auto" data-carousel="static">
@@ -732,14 +838,14 @@
         </section>
 
         <section class="hidden md:block md:w-[99%] md:h-14 lg:h-24 mx-auto my-2">
-            <div class="grid grid-cols-12 h-full w-full gap-4">
-                <div class="">
-
+            <div class="grid grid-cols-12 h-full w-full gap-4 bg-red-800 py-4">
+                <div class="flex items-center justify-center text-white">
+                    <h2 class="font-semibold text-xl md:text-2xl">Marcas</h2>
                 </div>
                 <div class="">
                     <a href="">
                         <div
-                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-amber-700">
                             <img src="../public/assets/img/index/marcas/Xtrenght1.png" alt="" class="object-cover">
                         </div>
                     </a>
@@ -747,7 +853,7 @@
                 <div class="">
                     <a href="">
                         <div
-                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-amber-700">
                             <img src="../public/assets/img/index/marcas/Body.webp" alt="" class="object-cover">
                         </div>
                     </a>
@@ -755,7 +861,7 @@
                 <div class="">
                     <a href="">
                         <div
-                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-amber-700">
                             <img src="../public/assets/img/index/marcas/Ena.webp" alt="" class="object-cover">
                         </div>
                     </a>
@@ -763,7 +869,7 @@
                 <div class="">
                     <a href="">
                         <div
-                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-amber-700">
                             <img src="../public/assets/img/index/marcas/gente.webp" alt="" class="object-cover">
                         </div>
                     </a>
@@ -771,7 +877,7 @@
                 <div class="">
                     <a href="">
                         <div
-                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-amber-700">
                             <img src="../public/assets/img/index/marcas/Gold.webp" alt="" class="object-cover">
                         </div>
                     </a>
@@ -779,7 +885,7 @@
                 <div class="">
                     <a href="">
                         <div
-                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-amber-700">
                             <img src="../public/assets/img/index/marcas/HTN1.png" alt="" class="object-cover">
                         </div>
                     </a>
@@ -787,7 +893,7 @@
                 <div class="">
                     <a href="">
                         <div
-                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-amber-700">
                             <img src="../public/assets/img/index/marcas/Mervick1.png" alt="" class="object-cover">
                         </div>
                     </a>
@@ -795,7 +901,7 @@
                 <div class="">
                     <a href="">
                         <div
-                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-amber-700">
                             <img src="../public/assets/img/index/marcas/Pain-Lab.webp" alt="" class="object-cover">
                         </div>
                     </a>
@@ -803,7 +909,7 @@
                 <div class="">
                     <a href="">
                         <div
-                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-amber-700">
                             <img src="../public/assets/img/index/marcas/Star1.png" alt="" class="object-cover">
                         </div>
                     </a>
@@ -811,46 +917,38 @@
                 <div class="">
                     <a href="">
                         <div
-                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
+                            class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-amber-700">
                             <img src="../public/assets/img/index/marcas/XBody1.png" alt="" class="object-cover">
                         </div>
                     </a>
                 </div>
-                <!-- <div class="">
-                    <a href="">
-                        <div class="w-full h-full flex items-center justify-center border border-gray-800 rounded-full bg-yellow-200">
-                            <img src="../public/assets/img/index/marcas/Xtrenght1.png" alt="" class="object-cover">
-                        </div>
-                    </a>
-                </div> -->
-
             </div>
         </section>
 
     </main>
 
-    <footer class="w-full mx-auto overflow-hidden max-w-screen-2xl  bg-red-500 md:grid md:grid-cols-4 md:gap-2">
+    <footer
+        class="w-full mx-auto overflow-hidden max-w-screen-2xl  bg-red-700 md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-2">
         <!-- Logo -->
-        <div class="w-[90%] mx-auto">
+        <div class="w-[90%] mx-auto text-gray-200">
             <a href="" class="w-full">
                 <div class="py-2 flex flex-col items-center justify-center">
-                    <h1 class="text-4xl text-center">I<span class="text-2xl">RON</span>C<span
+                    <h1 class="logo text-4xl text-center">I<span class="text-2xl">RON</span>C<span
                             class="text-2xl">ORE</span></h1>
-                    <h2 class="text-center">Suplementos Deportivos</h2>
+                    <h2 class="logo text-center">Suplementos Deportivos</h2>
                 </div>
             </a>
             <div class="px-3 py-2">
                 <h3>Sarmiento Nº 617 Catamarca</h3>
                 <h3 class="mb-2">ironcore@gmail.com</h3>
                 <a href="">
-                    <h3 class="mb-2">Ver Mapa</h3>
+                    <h3 class="mb-2 underline">Ver Mapa</h3>
                 </a>
             </div>
         </div>
-
         <!-- Tienda Online -->
-        <div class="w-[90%] mx-auto">
-            <h2 class="pt-5 pb-3 text-center md:text-left md:px-3">Tienda Online</h2>
+        <div class="w-[90%] mx-auto text-gray-200">
+            <h2 class="pt-5 pb-3 text-center md:text-left md:px-3 font-bold md:text-2xl">Tienda Online</h2>
             <a href="">
                 <h3 class="px-3 mb-1">Conócenos</h3>
             </a>
@@ -867,53 +965,61 @@
                 <h3 class="px-3 mb-1">Políticas de Devolución</h3>
             </a>
         </div>
-
         <!-- Medios de Pago -->
-        <div class="w-[95%] mx-auto">
+        <div class="w-[95%] mx-auto text-gray-200">
             <h2 class="pt-5 pb-3 text-center md:text-left md:px-3">Medios de Pago</h2>
-            <div class="flex flex-row flex-wrap justify-evenly gap-1 bg-slate-500">
-                <div class="bg-yellow-400 w-1/5 h-8">
+            <div class="flex flex-row flex-wrap justify-evenly gap-2">
+                <div class="w-1/5 h-8">
                     <img src="./assets/icons/pagos/mercado-pago.png" alt="" class="h-full w-full object-cover">
                 </div>
-                <div class="bg-yellow-400 w-1/5 h-8">
+                <div class="w-1/5 h-8">
                     <img src="./assets/icons/pagos/mastercard.png" alt="" class="h-full w-full object-cover">
                 </div>
-                <div class="bg-yellow-400 w-1/5 h-8">
+                <div class="w-1/5 h-8">
                     <img src="./assets/icons/pagos/american-express.png" alt="" class="h-full w-full object-cover">
                 </div>
-                <div class="bg-yellow-400 w-1/5 h-8">
+                <div class="w-1/5 h-8">
                     <img src="./assets/icons/pagos/maestro.png" alt="" class="h-full w-full object-cover">
                 </div>
-                <div class="bg-yellow-400 w-1/5 h-8">
+                <div class="w-1/5 h-8">
                     <img src="./assets/icons/pagos/naranja.png" alt="" class="h-full w-full object-cover">
                 </div>
-                <div class="bg-yellow-400 w-1/5 h-8">
+                <div class="w-1/5 h-8">
                     <img src="./assets/icons/pagos/pago-facil.jpg" alt="" class="h-full w-full object-cover">
                 </div>
-                <div class="bg-yellow-400 w-1/5 h-8">
+                <div class="w-1/5 h-8">
                     <img src="./assets/icons/pagos/Paypal.png" alt="" class="h-full w-full object-cover">
                 </div>
-                <div class="bg-yellow-400 w-1/5 h-8">
+                <div class="w-1/5 h-8">
                     <img src="./assets/icons/pagos/visa.png" alt="" class="h-full w-full object-cover">
                 </div>
-
+                <div class="w-1/5 h-8">
+                    <img src="./assets/icons/pagos/cash.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="w-1/5 h-8">
+                    <img src="./assets/icons/pagos/transferencia.png" alt="" class="h-full w-full object-fill">
+                </div>
+                <div class="w-1/5 h-8">
+                    <img src="./assets/icons/pagos/bitcoin.png" alt="" class="h-full w-full object-fill">
+                </div>
+                <div class="w-1/5 h-8">
+                    <img src="./assets/icons/pagos/western-union.png" alt="" class="h-full w-full object-fill">
+                </div>
             </div>
         </div>
-        <div class="w-[90%] mx-auto">
+        <!-- Suscripcion -->
+        <div class="hidden w-[90%] mx-auto text-gray-200 lg:inline-block">
             <h2 class="pt-5 pb-3 text-center md:text-left md:px-3">Suscribite</h2>
             <form action="" class="rounded-xl max-w-sm">
                 <div class="text-gray-700 grid">
                     <input type="text" autocomplete="email" class="px-2 border-gray-300 rounded-lg h-9">
                 </div>
                 <div>
-                    <button type="submit" class="p-2 bg-gray-700 mt-2 rounded-lg hover:bg-amber-400">Regristrar</button>
+                    <button type="submit" class="p-2 bg-blue-700 mt-2 rounded-lg hover:bg-blue-800">Regristrar</button>
                 </div>
-
             </form>
         </div>
-
     </footer>
-
 
     <script src="../lib/node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
