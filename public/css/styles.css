@@ -4,8 +4,6 @@ input[type=number]::-webkit-outer-spin-button{
     margin: 0;
 }
 
-/* input[type=number]{-moz-appearance: textfield;} */
-
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +16,7 @@ body{
   font-style: normal;
 }
 
-.logo{
+.logo, .categorias{
     font-family: "Black Ops One", system-ui;
   font-weight: 400;
   font-style: normal;
